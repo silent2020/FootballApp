@@ -1,0 +1,13 @@
+echo "# FootballApp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/silent2020/FootballApp.git
+git push -u origin main
+
+git remote add origin https://github.com/silent2020/FootballApp.git
+git branch -M main
+git push -u origin main
+
+https://github.com/silent2020/FootballApp.git
