@@ -5,14 +5,12 @@ const url = 'https://api.football-data.org/v2/competitions/2021/matches';
 
 export const fetchData = async () =>{
     try{
-        
-        const response = await axios.get(url,{
+        const {data:{matches}} = await axios.get(url,{
             headers:{
                 'X-Auth-Token':token 
             }
         });
-        return response;
-        console.log(response);
+        return {matches};   
     }
     catch(error){
         

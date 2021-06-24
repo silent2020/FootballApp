@@ -4,17 +4,23 @@ import {fetchData} from './api';
 import React from 'react';
 class App extends React.Component {
   
+  state ={
+    data:{},
+  }
+
   async componentDidMount(){
-    const data = await fetchData();
-    console.log(data);
+      const fetchedData=await fetchData();
+      this.setState({data:fetchedData});
+      //console.log(data);
   }
 
   render(){
+    const data=this.state;
     return (
       <div className={Styles.container}>
         <h1>Salam</h1> 
         <WeeksNumber/>
-        <Competitions/>
+        <Competitions data={data}/>
       </div>
     );
   }
