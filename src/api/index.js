@@ -16,6 +16,4 @@ export const fetchData = async () =>{
         
     }
 }
-  
-/*refining API data*/
 

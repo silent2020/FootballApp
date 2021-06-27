@@ -1,9 +1,6 @@
-body {
-    background-color: rgb(216, 235, 248);
-}
-
-.container {
+.table{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }

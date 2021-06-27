@@ -1,4 +1,4 @@
-import {Competitions,WeekNumber, WeeksNumber} from './components';
+import {Competitions, WeeksNumber} from './components';
 import Styles from './App.Module.css';
 import {fetchData} from './api';
 import React from 'react';
@@ -18,10 +18,10 @@ class App extends React.Component {
     const data=this.state;
     return (
       <div className={Styles.container}>
-        <h1>Salam</h1> 
-        <WeeksNumber/>
         <Competitions data={data}/>
       </div>
+      /*<h1>Salam</h1> 
+        <WeeksNumber/>*/
     );
   }
 }
